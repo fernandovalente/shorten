@@ -7,8 +7,7 @@
 
 ## How to develop?
 1. clone the repository
-2. Inside project folder, do make shell
-3. exit
+2. chmod +x cmd.sh
 4. make start
 
 ## Prerequisites
