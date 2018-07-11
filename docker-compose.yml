@@ -12,14 +12,13 @@ services:
       - django-media:/usr/src/app/media
       - django-static:/usr/src/app/static
     env_file:
-      - develop.env
+      - ./envfiles/develop.env
     environment:
       - COMMAND=runserver
     ports:
       - 8000:8000
     depends_on:
       - postgres
-      - redis
 
   postgres:
     image: postgres:10.1
@@ -41,7 +40,3 @@ volumes:
   django-static:
   postgres-data:
 
-networks:
-    default:
-        external:
-            name: shorten
