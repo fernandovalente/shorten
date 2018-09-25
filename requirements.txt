@@ -10,3 +10,6 @@ djangorestframework==3.8.2
 ipdb==0.11
 django-debug-toolbar==1.9.1
 
+short-url==1.2.2
+django-model-utils==3.1.2
+
